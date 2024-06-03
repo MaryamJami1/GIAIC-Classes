@@ -456,27 +456,27 @@
 
 ///////////////////callback function
 ///pass as a argument in onother function]
-function greeting(askName:()=>void){
-   console.log("hello, greed");
+// function greeting(askName:()=>void){
+//    console.log("hello, greed");
    
-};
+// };
 
-function askName(){
-   console.log("enter your name");
+// function askName(){
+//    console.log("enter your name");
    
-};
+// };
 
 
-greeting(askName);
+// greeting(askName);
 
 
-///////////////////asycnchronous
+// ///////////////////asycnchronous
 
-console.log("first");
+// console.log("first");
 
-setTimeout(()=>{
-   console.log("second");1000}
+// setTimeout(()=>{
+//    console.log("second");1000}
 
-)
+// )
 
-console.log("third");
+// console.log("third");
