@@ -427,14 +427,27 @@
 
 //////////////////optioinal parameter
 
-function greet(name?: string){
-   console.log(`hello ${name}`)
+// function greet(name?: string){
+//    console.log(`hello ${name}`)
    
-   };
+//    };
    
    
-   greet() /////////////////////////execute deffault parameter( user);
-   greet("maryam");
+//    greet() /////////////////////////execute deffault parameter( user);
+//    greet("maryam");
 
 
    
+
+
+
+/////////////////////////////////arrow function
+
+// compact way to written code
+
+let name = ()=>{
+   console.log("hello");
+   
+};
+
+name()
