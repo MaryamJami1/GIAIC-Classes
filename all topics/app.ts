@@ -455,7 +455,7 @@
 
 
 ///////////////////callback function
-///pass as a argument in onother function
+///pass as a argument in onother function]
 function greeting(askName:()=>void){
    console.log("hello, greed");
    
@@ -470,6 +470,13 @@ function askName(){
 greeting(askName);
 
 
-console.log(askName);
+///////////////////asycnchronous
 
+console.log("first");
 
+setTimeout(()=>{
+   console.log("second");1000}
+
+)
+
+console.log("third");
