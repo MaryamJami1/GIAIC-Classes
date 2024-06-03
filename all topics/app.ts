@@ -445,9 +445,31 @@
 
 // compact way to written code
 
-let name = ()=>{
-   console.log("hello");
+// let name = ()=>{
+//    console.log("hello");
+   
+// };
+
+// name()
+
+
+
+///////////////////callback function
+///pass as a argument in onother function
+function greeting(askName:()=>void){
+   console.log("hello, greed");
    
 };
 
-name()
+function askName(){
+   console.log("enter your name");
+   
+};
+
+
+greeting(askName);
+
+
+console.log(askName);
+
+
