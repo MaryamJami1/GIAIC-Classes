@@ -491,14 +491,14 @@
 
 
 
-console.log("first");
+// console.log("first");
 
-setTimeout(()=>{
-   for(let i=0; i<=10000; i++){
-console.log("abc");
+// setTimeout(()=>{
+//    for(let i=0; i<=10000; i++){
+// console.log("abc");
 
-   }
-}
-)
+//    }
+// }
+// )
 
-console.log("third");
+// console.log("third");
