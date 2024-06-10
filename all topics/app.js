@@ -88,16 +88,75 @@ var iceCream = "Vanilla";
 ///not in javascript
 ////if we make array with types and legnth fixed we use tuples
 ////we can assign tytpe in array 
-var trafficLight = ["green", "red", "yellow"];
-var tuples = ["maryam", true, 20];
-tuples.push(12);
-console.log(tuples);
-//////////////////////functions parameters
-/////default parameter
-function greet(name) {
-    if (name === void 0) { name = "user"; }
-    console.log("hello ".concat(name));
-}
-;
-greet();
-greet("maryam");
+// let trafficLight:string []=
+// ["green", "red", "yellow"]
+// let tuples:[string, boolean, number]=
+// ["maryam", true, 20]
+// tuples.push(12);
+// console.log(tuples);
+// //////////////////////functions parameters
+// /////default parameter
+// function greet(name:string="user"){
+// console.log(`hello ${name}`)
+// };
+// greet() /////////////////////////execute deffault parameter( user);
+// greet("maryam")
+//////////////////optioinal parameter
+// function greet(name?: string){
+//    console.log(`hello ${name}`)
+//    };
+//    greet() /////////////////////////execute deffault parameter( user);
+//    greet("maryam");
+/////////////////////////////////arrow function
+// compact way to written code
+// let name = ()=>{
+//    console.log("hello");
+// };
+// name()
+///////////////////callback function
+///pass as a argument in onother function]
+// function greeting(askName:()=>void){
+//    console.log("hello, greed");
+// };
+// function askName(){
+//    console.log("enter your name");
+// };
+// greeting(askName);
+// ///////////////////asycnchronous
+// console.log("first");
+// setTimeout(()=>{
+//    console.log("second");1000}
+// )
+// console.log("third");
+// console.log("first");
+// setTimeout(()=>{
+//    for(let i=0; i<=10000; i++){
+// console.log("abc");
+//    }
+// }
+// )
+// console.log("third");
+///////////////sir ameen class
+// let makePizza ;
+// makePizza = "your pizza is being prepared";
+// console.log(makePizza);
+// function makeQourma (){
+//     return "qourma"
+// }
+// let dish = makeQourma();
+// console.log(dish);
+//////////////////promise
+// simple function
+// function makePizza (){
+//     return"pizza is being prepared"
+// }
+// let sirashariborder = makePizza(); 
+// console.log(sirashariborder);
+///////////////// promises
+// 3 states of promises      //pending    //resolves    //reject
+var helloPromise = new Promise(function (resolve) {
+    setTimeout(function () {
+        resolve("hello world!");
+    }, 2000);
+});
+helloPromise.then(function (message) { return console.log(message); });

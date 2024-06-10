@@ -528,13 +528,22 @@
 //////////////////promise
 // simple function
 
-function makePizza (){
-    return"pizza is being prepared"
-}
-let sirashariborder = makePizza(); 
-console.log(sirashariborder);
+// function makePizza (){
+//     return"pizza is being prepared"
+// }
+// let sirashariborder = makePizza(); 
+// console.log(sirashariborder);
 
 
 
 
 ///////////////// promises
+// 3 states of promises      //pending    //resolves    //reject
+
+const helloPromise = new Promise((resolve) => {
+    setTimeout( ()=> {
+   resolve("hello world!")}, 2000  )
+} )
+
+helloPromise.then((message) => console.log(message)
+);
