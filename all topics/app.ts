@@ -502,3 +502,20 @@
 // )
 
 // console.log("third");
+
+
+
+
+
+///////////////sir ameen class
+
+let makePizza ;
+makePizza = "your pizza is being prepared";
+
+console.log(makePizza);
+function makeQourma (){
+    return "qourma"
+}
+
+let dish = makeQourma();
+console.log(dish);
