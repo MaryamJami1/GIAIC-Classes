@@ -154,9 +154,18 @@ var iceCream = "Vanilla";
 // console.log(sirashariborder);
 ///////////////// promises
 // 3 states of promises      //pending    //resolves    //reject
-var helloPromise = new Promise(function (resolve) {
-    setTimeout(function () {
-        resolve("hello world!");
-    }, 2000);
+// const helloPromise = new Promise((resolve) => {
+//     setTimeout( ()=> {
+//    resolve("hello world!")}, 10000  )//  after 10sec
+// } )
+// helloPromise.then((message) => console.log(message)
+// );
+var conditionalPromise = new Promise(function (resolve, reject) {
+    var succes = Math.random() > 0.5;
+    if (succes) {
+        resolve("successees");
+    }
+    else {
+        reject(new Error("failure"));
+    }
 });
-helloPromise.then(function (message) { return console.log(message); });

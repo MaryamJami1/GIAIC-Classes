@@ -187,7 +187,7 @@
 
 
 
- ///////////practice
+///////////practice
 
 //  type IStudent = {
 //     name:string,
@@ -208,7 +208,7 @@
 
 
 
- ///////////////intersection
+///////////////intersection
 //  let OkashaInfo:IStudent & ITeacher = {
 //     name:"maryam",
 //     class:12,
@@ -229,16 +229,16 @@
 //  }
 
 //  console.log(OkashaInfo2);
- 
+
 ///////////LITERAL TYPING
 
- type IIceCream = "Strawberry" | "Vanilla" | "blue berry";
+type IIceCream = "Strawberry" | "Vanilla" | "blue berry";
 
- let iceCream :IIceCream= "Vanilla"
+let iceCream: IIceCream = "Vanilla"
 
 
 
- ////////SRUCTURED Typing
+////////SRUCTURED Typing
 //  let ball = {
 //     diameter:10
 //  }
@@ -257,9 +257,9 @@
 //     diameter:30,
 //     length:40
 // }
- 
+
 // ball = tube
- //nominal typing is not assign a object into onther abject
+//nominal typing is not assign a object into onther abject
 
 
 //  let ball = {
@@ -284,7 +284,7 @@
 
 
 
- //////////////////////////////////enums
+//////////////////////////////////enums
 //  used for stored groups of const
 //  access by value and key and dot notation
 //enum name is preffered in capatilize
@@ -295,9 +295,9 @@
 //    Monday  = 2,                 //edited numeric value
 //    Tuesday,
 //    Wednesday,
-  
+
 //  }
- 
+
 
 // //  console.log(Days[7]);
 // console.log(Days.Thursday);
@@ -305,10 +305,10 @@
 // console.log(Days.Monday);
 //  console.log(Days["Wednesday"]); 
 
- 
+
 
 //  alternate of enums
- 
+
 //literal typing 
 //  let days:"monday" | "tuesday"| "wednesday";
 
@@ -429,15 +429,15 @@
 
 // function greet(name?: string){
 //    console.log(`hello ${name}`)
-   
+
 //    };
-   
-   
+
+
 //    greet() /////////////////////////execute deffault parameter( user);
 //    greet("maryam");
 
 
-   
+
 
 
 
@@ -447,7 +447,7 @@
 
 // let name = ()=>{
 //    console.log("hello");
-   
+
 // };
 
 // name()
@@ -458,12 +458,12 @@
 ///pass as a argument in onother function]
 // function greeting(askName:()=>void){
 //    console.log("hello, greed");
-   
+
 // };
 
 // function askName(){
 //    console.log("enter your name");
-   
+
 // };
 
 
@@ -540,10 +540,25 @@
 ///////////////// promises
 // 3 states of promises      //pending    //resolves    //reject
 
-const helloPromise = new Promise((resolve) => {
-    setTimeout( ()=> {
-   resolve("hello world!")}, 2000  )
-} )
+// const helloPromise = new Promise((resolve) => {
+//     setTimeout( ()=> {
+//    resolve("hello world!")}, 10000  )//  after 10sec
+// } )
 
-helloPromise.then((message) => console.log(message)
-);
+// helloPromise.then((message) => console.log(message)
+// );
+
+
+// const conditionalPromise = new Promise((resolve, reject) => {
+//     const succes = Math.random() > 0.5;
+//     if (succes) {
+//         resolve("successees")
+//     }
+//     else {
+//         reject(new Error("failure"))
+
+//     }
+// }
+// );
+
+
