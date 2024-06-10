@@ -509,13 +509,32 @@
 
 ///////////////sir ameen class
 
-let makePizza ;
-makePizza = "your pizza is being prepared";
+// let makePizza ;
+// makePizza = "your pizza is being prepared";
 
-console.log(makePizza);
-function makeQourma (){
-    return "qourma"
+// console.log(makePizza);
+// function makeQourma (){
+//     return "qourma"
+// }
+
+// let dish = makeQourma();
+// console.log(dish);
+
+
+
+
+
+
+//////////////////promise
+// simple function
+
+function makePizza (){
+    return"pizza is being prepared"
 }
+let sirashariborder = makePizza(); 
+console.log(sirashariborder);
 
-let dish = makeQourma();
-console.log(dish);
+
+
+
+///////////////// promises
