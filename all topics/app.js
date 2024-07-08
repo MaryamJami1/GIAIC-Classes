@@ -160,12 +160,119 @@ var iceCream = "Vanilla";
 // } )
 // helloPromise.then((message) => console.log(message)
 // );
-var conditionalPromise = new Promise(function (resolve, reject) {
-    var succes = Math.random() > 0.5;
-    if (succes) {
-        resolve("successees");
+// const conditionalPromise = new Promise((resolve, reject) => {
+//     const succes = Math.random() > 0.5;
+//     if (succes) {
+//         resolve("successees")
+//     }
+//     else {
+//         reject(new Error("failure"))
+//     }
+// }
+// );
+// let sirZia = new Promise((res, rej)=>{
+//     return res()
+// }
+// )
+// sirZia
+// .then((status)=>{
+//     console.log(status);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+// sir asharib class
+// OOPs  object oriented programming
+// convention    class name ka firt word capital hoga predefined rule
+// variable change in property
+// function chnge in method
+// type use for all
+// type CarType = {
+//     brand:string
+//     model:string
+//     year:number
+// }
+// interface only use for objects
+// interface CarType {
+//     brand: string
+//     model: string
+//     year: number
+// }
+// class Car implements CarType {
+//     brand = "toyota"
+//     model = "corolla"
+//     year = 2024
+// }
+// let myCar = new Car()
+// // console.log(myCar);
+// class Car1 {
+//     brand = "toyota"
+//     model = "corolla"
+//     year = 2024
+//     displayDetails() {
+//         return `Brand ${this.brand} Model ${this.model} Year ${this.year}`
+//     }
+// }
+// let myCar1 = new Car1()
+// console.log(myCar1.displayDetails());
+// console.log(myCar1);
+// function displayDetails(){
+//     return `Brand ${myCar.brand} Model${myCar["model"]} Year${myCar.year}`
+// }
+//////////////////////////////////sir ubaid class
+// encapsulation
+// class Student1 {
+//    public name2: string
+//     age2: number
+//     constructor(stdName:string,  stdAge:number){
+//        this.name2=stdName
+//        this.age2 = stdAge
+//     }
+//     canProgram(): void {
+//         console.log("this student can programming");
+//     }
+// }
+// let s1:Student1 = new Student1("ali", 20)
+// s1.age2=18
+// s1.name2="ali"
+// s1.canProgram()
+// console.log(s1);
+// abstract class
+// abstract class  takePhoto {
+//     filter:string
+//     brust:number
+//     constructor(filName:string, brustNo:number){
+//         this.filter= filName
+//         this.brust= brustNo
+//     }
+// }
+// // inheritance
+// class Instagram extends takePhoto {
+//     reelTime : number
+//     constructor(filName:string, brustNo:number, rltime:number){
+//         super(filName,brustNo)
+//         this.reelTime = rltime
+//     }
+// }
+// let instaApp: Instagram = new Instagram("whitness", 10, 10);
+// console.log(instaApp);
+// access modifiler/
+// getter setter
+var personData = /** @class */ (function () {
+    function personData(tName, tAge, tExp) {
+        this.name = tName;
+        this.age = tAge;
+        this.experience = tExp;
     }
-    else {
-        reject(new Error("failure"));
-    }
-});
+    Object.defineProperty(personData.prototype, "updateAge", {
+        set: function (updAge) {
+            this.age = updAge;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return personData;
+}());
+var tData = new personData("ubaid", 20, 3);
+tData.updateAge = 30;
+console.log(tData);
