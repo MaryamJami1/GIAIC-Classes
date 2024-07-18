@@ -837,3 +837,13 @@
 // )
 
 
+function delaymessage(callback: () => void): void {
+    setTimeout(() => {
+        callback()
+    }, 1000)
+}
+
+delaymessage(()=>{
+    console.log("hi i am callback");
+    
+})

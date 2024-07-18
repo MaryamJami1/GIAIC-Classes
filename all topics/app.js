@@ -430,10 +430,19 @@
 // }
 // greet(4).then(number=>console.log(number)
 // )
-function getNumber() {
-    return new Promise(resolve => setTimeout(() => {
-        resolve(10);
-    }, 1000));
+// function getNumber(){
+//     return new Promise(resolve => setTimeout(()=>{
+//         resolve(10)
+//     },1000))
+// }
+// getNumber().then(number=>console.log(number)
+// )
+function delaymessage(callback) {
+    setTimeout(() => {
+        callback();
+    }, 1000);
 }
-getNumber().then(number => console.log(number));
+delaymessage(() => {
+    console.log("hi i am callback");
+});
 export {};
