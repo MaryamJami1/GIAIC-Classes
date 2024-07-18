@@ -925,39 +925,55 @@
 // setTimeout(greet,2000)
 
 
-function washing(func:()=>void){
-console.log("washing started....");
-setTimeout(()=>{
-    console.log("washing done");
-    func()
-},5000)
-}
-
-console.log("jharoo laga kr ati hun");
+// function washing(func:()=>void){
+// console.log("washing started....");
+// setTimeout(()=>{
+//     console.log("washing done");
+//     func()
+// },5000)
+// }
 
 
-function soaking(func:()=>void){
-console.log("soaking started.....");
-setTimeout(()=>{
-    console.log("soaking done");
-    func()
-},3000)
-}
 
-console.log("pucha laga kr ati hn");
 
-function drying(){
-    console.log("drying started.....");
-    setTimeout(()=>{
-        console.log("drying done");
-    },2000)
+// function soaking(func:()=>void){
+// console.log("soaking started.....");
+// setTimeout(()=>{
+//     console.log("soaking done");
+//     func()
+// },3000)
+// }
+
+
+
+// function drying(){
+//     console.log("drying started.....");
+//     setTimeout(()=>{
+//         console.log("drying done");
+//     },2000)
     
-}
+// }
 
-washing(()=>{
-    soaking(()=>{
-        drying()
-    })
+// washing(()=>{
+//     soaking(()=>{
+//         drying()
+//     })
+// })
+
+
+
+
+
+
+
+//promises
+
+let myPromise = new Promise((resolve,reject)=>{
+   resolve("hello")
+   
 })
 
-console.log("kapre dhul gaye");
+myPromise.then((value)=>{
+    console.log(value);
+    
+})
