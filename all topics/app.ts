@@ -847,3 +847,24 @@
 //     console.log("hi i am callback");
     
 // })
+
+// function object
+
+
+type Tperson ={
+    name:string,
+    age:number,
+    address:string
+}
+
+const person:Tperson={
+    name:"maryam",
+    age:20,
+    address:"landhi"
+}
+
+function personAcsses(person:Tperson){
+return person
+}
+
+console.log(personAcsses(person));
