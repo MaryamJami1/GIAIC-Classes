@@ -461,12 +461,19 @@
 // }
 // console.log(personAcsses(person));
 // callback
-function parentFunction(func) {
-    console.log("hello i am parent");
-    func();
+// function outerFunc(func:()=>void){
+// console.log(2+2);
+// func()
+// }
+// function innerFunc(){
+//     console.log(4+4);
+// }
+// outerFunc(innerFunc)
+function outerFunction(callback) {
+    callback("ameen");
 }
-function childFunction() {
-    console.log("hello i am child");
+function innerFunction(name) {
+    console.log(`hello ${name}`);
 }
-parentFunction(childFunction);
+outerFunction(innerFunction);
 export {};

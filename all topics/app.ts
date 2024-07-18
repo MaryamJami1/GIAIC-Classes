@@ -872,14 +872,33 @@
 
 
 // callback
+// function outerFunc(func:()=>void){
+// console.log(2+2);
+// func()
+// }
 
-function parentFunction(func:()=>void){
-console.log("hello i am parent");
-func()
-}
+// function innerFunc(){
+//     console.log(4+4);
+// }
 
-function childFunction(){
-console.log("hello i am child");
-}
+// outerFunc(innerFunc)
 
-parentFunction(childFunction)
+// function outerFunction(callback:(name:string)=> void){
+// let name ="ameen alam"
+// callback(name)
+
+// }
+// outerFunction(function(name){
+//     console.log(`hello ${name}`);
+    
+// // })
+
+
+// function outerFunction(callback:(name:string)=> void){
+//     callback("ameen")
+//     }
+//     function innerFunction(name:string){
+//     console.log(`hello ${name}`);
+//     }
+    
+//     outerFunction(innerFunction)
