@@ -851,20 +851,35 @@
 // function object
 
 
-type Tperson ={
-    name:string,
-    age:number,
-    address:string
+// type Tperson ={
+//     name:string,
+//     age:number,
+//     address:string
+// }
+
+// const person:Tperson={
+//     name:"maryam",
+//     age:20,
+//     address:"landhi"
+// }
+
+// function personAcsses(person:Tperson){
+// return person
+// }
+
+// console.log(personAcsses(person));
+
+
+
+// callback
+
+function parentFunction(func:()=>void){
+console.log("hello i am parent");
+func()
 }
 
-const person:Tperson={
-    name:"maryam",
-    age:20,
-    address:"landhi"
+function childFunction(){
+console.log("hello i am child");
 }
 
-function personAcsses(person:Tperson){
-return person
-}
-
-console.log(personAcsses(person));
+parentFunction(childFunction)
