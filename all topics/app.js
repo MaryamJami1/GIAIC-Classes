@@ -469,11 +469,26 @@
 //     console.log(4+4);
 // }
 // outerFunc(innerFunc)
-function outerFunction(callback) {
-    callback("ameen");
-}
-function innerFunction(name) {
-    console.log(`hello ${name}`);
-}
-outerFunction(innerFunction);
+// function outerFunction(callback:(name:string)=> void){
+// let name ="ameen alam"
+// callback(name)
+// }
+// outerFunction(function(name){
+//     console.log(`hello ${name}`);
+// // })
+// function outerFunction(callback:(name:string)=> void){
+//     callback("ameen")
+//     }
+//     function innerFunction(name:string){
+//     console.log(`hello ${name}`);
+//     }
+//     outerFunction(innerFunction)
+// setTimeout
+setTimeout(function () {
+    console.log("how are you after 2sec");
+}, 2000);
+console.log("hello");
+setTimeout(function () {
+    console.log("bye after 3sec");
+}, 3000);
 export {};

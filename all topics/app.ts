@@ -902,3 +902,18 @@
 //     }
     
 //     outerFunction(innerFunction)
+
+
+// setTimeout
+setTimeout(function(){
+    console.log("how are you after 2sec");
+    
+},2000)
+
+console.log("hello");
+
+
+setTimeout(function(){
+    console.log("bye after 3sec");
+    
+},3000)
