@@ -917,3 +917,9 @@
 //     console.log("bye after 3sec");
     
 // },3000)
+
+
+function greet(){
+    console.log("hello how are you?");
+}
+setTimeout(greet,2000)
