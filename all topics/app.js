@@ -484,11 +484,40 @@
 //     }
 //     outerFunction(innerFunction)
 // setTimeout
-setTimeout(function () {
-    console.log("how are you after 2sec");
-}, 2000);
-console.log("hello");
-setTimeout(function () {
-    console.log("bye after 3sec");
-}, 3000);
+// setTimeout(function(){
+//     console.log("how are you after 2sec");
+// },2000)
+// console.log("hello");
+// setTimeout(function(){
+//     console.log("bye after 3sec");
+// },3000)
+// function greet(){
+//     console.log("hello how are you?");
+// }
+// setTimeout(greet,2000)
+function washing(func) {
+    console.log("washing started....");
+    setTimeout(() => {
+        console.log("washing done");
+        func();
+    }, 5000);
+}
+function soaking(func) {
+    console.log("soaking started.....");
+    setTimeout(() => {
+        console.log("soaking done");
+        func();
+    }, 3000);
+}
+function drying() {
+    console.log("drying started.....");
+    setTimeout(() => {
+        console.log("drying done");
+    }, 2000);
+}
+washing(() => {
+    soaking(() => {
+        drying();
+    });
+});
 export {};
