@@ -905,15 +905,15 @@
 
 
 // setTimeout
-setTimeout(function(){
-    console.log("how are you after 2sec");
+// setTimeout(function(){
+//     console.log("how are you after 2sec");
     
-},2000)
+// },2000)
 
-console.log("hello");
+// console.log("hello");
 
 
-setTimeout(function(){
-    console.log("bye after 3sec");
+// setTimeout(function(){
+//     console.log("bye after 3sec");
     
-},3000)
+// },3000)
