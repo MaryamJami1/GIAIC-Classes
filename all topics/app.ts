@@ -925,32 +925,32 @@
 // setTimeout(greet,2000)
 
 
-function washing(func:()=>void){
-console.log("washing started....");
-setTimeout(()=>{
-    console.log("washing done");
-    func()
-},5000)
-}
+// function washing(func:()=>void){
+// console.log("washing started....");
+// setTimeout(()=>{
+//     console.log("washing done");
+//     func()
+// },5000)
+// }
 
-function soaking(func:()=>void){
-console.log("soaking started.....");
-setTimeout(()=>{
-    console.log("soaking done");
-    func()
-},3000)
-}
+// function soaking(func:()=>void){
+// console.log("soaking started.....");
+// setTimeout(()=>{
+//     console.log("soaking done");
+//     func()
+// },3000)
+// }
 
-function drying(){
-    console.log("drying started.....");
-    setTimeout(()=>{
-        console.log("drying done");
-    },2000)
+// function drying(){
+//     console.log("drying started.....");
+//     setTimeout(()=>{
+//         console.log("drying done");
+//     },2000)
     
-}
+// }
 
-washing(()=>{
-    soaking(()=>{
-        drying()
-    })
-})
+// washing(()=>{
+//     soaking(()=>{
+//         drying()
+//     })
+// })
