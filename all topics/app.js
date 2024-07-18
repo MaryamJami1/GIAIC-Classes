@@ -522,9 +522,15 @@
 // })
 //promises
 let myPromise = new Promise((resolve, reject) => {
-    resolve("hello");
+    resolve("success!!!!!");
 });
 myPromise.then((value) => {
+    console.log(value);
+});
+let myPromise1 = new Promise((resolve, reject) => {
+    reject("fail!!!!");
+});
+myPromise1.catch((value) => {
     console.log(value);
 });
 export {};
