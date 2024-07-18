@@ -760,3 +760,80 @@
 
 // class-18
 
+// practice
+
+
+// // q-2
+// var famousPerson:string = "Albert Einstein";
+// var qoute:string = "A person who never made a mistake never tried anything new"
+
+// console.log(`"Once ${famousPerson} said: ${qoute}"`);
+
+// // q-3
+// var personName:string = "Maryam";
+// var title = personName.slice(0 , 1)
+// var upper = title.toUpperCase()
+// var remain = personName.slice(1)
+// var titleCase = upper + remain
+
+// console.log("Title Case: " + titleCase);
+// console.log("lower Case: " +personName.toLocaleLowerCase());
+// console.log("capital Case: " +personName.toUpperCase());
+
+
+
+
+// // q-3
+// var sum:number = 4;
+// console.log(sum+sum);
+
+// var sub= 16;
+// console.log(sub-8);
+
+// var multi = 4;
+// console.log(multi*2);
+
+// var divide = 16;
+// console.log(divide/2);
+
+
+
+
+
+
+
+// practice
+
+
+// write a typescript function that uses async await to wait for 2 sec and then returns a string hello world
+
+
+// async function greet(){
+// await new Promise(resolve => setTimeout(()=>{
+// return console.log("hello world");
+// },2000))
+// }
+
+// greet().then(message=>console.log(message))
+
+
+// async function greet(sum:number){
+// await new Promise(resolve => setTimeout(()=>{
+//     return console.log(sum + sum)
+// },2000))
+// }
+// greet(4).then(number=>console.log(number)
+// )
+
+
+
+
+// function getNumber(){
+//     return new Promise(resolve => setTimeout(()=>{
+//         resolve(10)
+//     },1000))
+// }
+// getNumber().then(number=>console.log(number)
+// )
+
+
