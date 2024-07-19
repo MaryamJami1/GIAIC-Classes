@@ -521,16 +521,27 @@
 //     })
 // })
 //promises
-let myPromise = new Promise((resolve, reject) => {
-    resolve("success!!!!!");
+// let myPromise = new Promise((resolve,reject)=>{
+//    resolve("success!!!!!")
+// })
+// myPromise.then((value)=>{
+//     console.log(value);
+// })
+// let myPromise1= new Promise((resolve,reject)=>{
+// reject("fail!!!!")
+// })
+// myPromise1.catch((value)=>{
+// console.log(value);
+// })
+let returnMoney = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Money resturn!!!!");
+    }, 3000);
 });
-myPromise.then((value) => {
+returnMoney.then((value) => {
     console.log(value);
-});
-let myPromise1 = new Promise((resolve, reject) => {
-    reject("fail!!!!");
-});
-myPromise1.catch((value) => {
+    console.log("thanks for returning money");
+}).catch((value) => {
     console.log(value);
 });
 export {};

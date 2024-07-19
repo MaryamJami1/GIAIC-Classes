@@ -987,3 +987,17 @@
 // console.log(value);
 
 // })
+
+
+let returnMoney = new Promise((resolve,reject)=>{
+setTimeout(()=>{
+resolve("Money resturn!!!!")
+},3000)
+})
+
+returnMoney.then((value)=>{
+console.log(value);
+console.log("thanks for returning money");
+}).catch((value)=>{
+console.log(value);
+})
