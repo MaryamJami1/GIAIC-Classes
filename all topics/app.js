@@ -570,13 +570,28 @@ function drying() {
         }, 2000);
     });
 }
-washing().then((value) => {
-    console.log(value);
-    return soaking();
-}).then((value) => {
-    console.log(value);
-    return drying();
-}).then((value) => {
-    console.log(value);
-});
+// washing().then((value) => {
+//     console.log(value);
+//     return soaking()
+// }).then((value) => {
+//     console.log(value);
+//     return drying()
+// }).then((value) => {
+//     console.log(value);
+// })
+// error handling using await
+async function runWashing() {
+    try {
+        let result1 = await washing();
+        console.log(result1);
+        let result2 = await soaking();
+        console.log(result2);
+        let result3 = await drying();
+        console.log(result3);
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+runWashing();
 export {};
