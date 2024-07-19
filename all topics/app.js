@@ -495,6 +495,31 @@
 //     console.log("hello how are you?");
 // }
 // setTimeout(greet,2000)
+//promises
+// let myPromise = new Promise((resolve,reject)=>{
+//    resolve("success!!!!!")
+// })
+// myPromise.then((value)=>{
+//     console.log(value);
+// })
+// let myPromise1= new Promise((resolve,reject)=>{
+// reject("fail!!!!")
+// })
+// myPromise1.catch((value)=>{
+// console.log(value);
+// })
+// let returnMoney = new Promise((resolve,reject)=>{
+// setTimeout(()=>{
+// resolve("Money resturn!!!!")
+// },3000)
+// })
+// returnMoney.then((value)=>{
+// console.log(value);
+// console.log("thanks for returning money");
+// }).catch((value)=>{
+// console.log(value);
+// })
+//////////////using callback washing machine
 // function washing(func:()=>void){
 // console.log("washing started....");
 // setTimeout(()=>{
@@ -520,28 +545,38 @@
 //         drying()
 //     })
 // })
-//promises
-// let myPromise = new Promise((resolve,reject)=>{
-//    resolve("success!!!!!")
-// })
-// myPromise.then((value)=>{
-//     console.log(value);
-// })
-// let myPromise1= new Promise((resolve,reject)=>{
-// reject("fail!!!!")
-// })
-// myPromise1.catch((value)=>{
-// console.log(value);
-// })
-let returnMoney = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("Money resturn!!!!");
-    }, 3000);
-});
-returnMoney.then((value) => {
+////////////using promises washing machine
+function washing() {
+    console.log("washing started...");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("washing done!!!");
+        }, 5000);
+    });
+}
+function soaking() {
+    console.log("soaking started....");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("soaking done!!!");
+        }, 3000);
+    });
+}
+function drying() {
+    console.log("drying started....");
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("drying done!!!");
+        }, 2000);
+    });
+}
+washing().then((value) => {
     console.log(value);
-    console.log("thanks for returning money");
-}).catch((value) => {
+    return soaking();
+}).then((value) => {
+    console.log(value);
+    return drying();
+}).then((value) => {
     console.log(value);
 });
 export {};
